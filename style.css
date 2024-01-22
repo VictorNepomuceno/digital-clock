@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.background__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #111;
+  overflow: hidden;
+  position: relative;
+  color: red;
+}
+
+.background__container img {
+  width: 650px;
+  position: absolute;
+  opacity: 0.2;
+}
+
+.bat {
+  top: 3rem;
+  right: -2rem;
+}
+
+.vampire {
+  bottom: -6rem;
+  left: -6rem;
+}
+
+.clock__container {
+  display: flex;
+  gap: 4rem;
+  width: 100%;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock__container span {
+  font-size: 12rem;
+  position: relative;
+  border-top: 3px solid rgba(255, 0, 0, 0.331);
+  border-bottom: 3px solid rgba(255, 0, 0, 0.331);
+  border-radius: 30px;
+}
+
+.hour::after,
+.minutes::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: red;
+  display: block;
+  right: -2.5rem;
+  top: 5.5rem;
+  box-shadow: 0px 30px red;
+}
